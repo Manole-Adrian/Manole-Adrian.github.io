@@ -1,0 +1,7 @@
+.mainBodyContainer {
+    position:absolute;
+    top:100vh;
+    background-color:#3ab503;
+    height:200vh;
+    width:100vw;
+}

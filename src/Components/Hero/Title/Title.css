@@ -1,0 +1,43 @@
+.titleContainer {
+    border-color:none;
+    color:white;
+    position:absolute;
+    top:0;
+    left:50vw;
+    transform:translateX(-50%);
+    text-align:center;
+    margin:none;
+    padding:none;
+    width:fit-content;
+    margin-top:5rem;
+    font-size:4rem;
+    z-index:2;
+    transition-property: left, font-size, position,border-color,transform;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+}
+
+.title {
+    font-size:min(inherit,4rem);
+    margin:0;
+}
+
+.subtitle {
+    font-size:2rem;
+    color:gray;
+    margin:0;
+    transform:scale(100%);
+    transition: transform .2s ease-out;
+}
+
+.disappear {
+    transform:scale(0%);
+}
+
+.banner {
+    background-color: black;
+    position:fixed;
+    font-size:1rem;
+    left:1rem;
+    transform:translateX(0%)
+}

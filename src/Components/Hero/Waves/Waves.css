@@ -1,0 +1,6 @@
+.waves {
+    position:absolute;
+    top:100vh;
+    width:99vw;
+    transform:translateY(-80%);
+  }
