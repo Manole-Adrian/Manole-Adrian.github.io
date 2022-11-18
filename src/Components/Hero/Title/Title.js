@@ -19,11 +19,11 @@ export default function Title() {
     },[])
 
     useEffect(() => {
-        if(scrollPos > 150 && isBanner === false)
+        if(scrollPos > 50 && isBanner === false)
         {
             setIsBanner(true);
         } 
-        if (scrollPos <= 150 && isBanner === true) {
+        if (scrollPos <= 50 && isBanner === true) {
             setIsBanner(false);
         }
     },[scrollPos])
