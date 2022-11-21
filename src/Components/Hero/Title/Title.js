@@ -23,7 +23,7 @@ export default function Title() {
         {
             setIsBanner(true);
         } 
-        if (scrollPos <= 50 && isBanner === true) {
+        if (scrollPos <= 150 && isBanner === true) {
             setIsBanner(false);
         }
     },[scrollPos])
