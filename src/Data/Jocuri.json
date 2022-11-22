@@ -1,28 +1,30 @@
 {
-    "GameList":[
-      {
-        "name":"Exploding Kittens",
-        "description":[
-          "Zeci de carti cu pisici dragute!","Fii ultimul care supravietuieste intr-o runda!","Runde rapide! (10-15 minute)"
-        ]
-      },
-      {
-        "name":"Catan",
-        "description":[
-          "point1","point2","point3"
-        ]
-      },
-      {
-        "name":"Monopoly",
-        "description":[
-          "point1","point2","point3"
-        ]
-      },
-      {
-        "name":"Shit Happens",
-        "description":[
-          "point1","point2","point3"
-        ]
-      }
-    ]
-  }
+  "GameList": [
+    {
+      "name": "Exploding Kittens",
+      "description": [
+        {
+          "type": "obj",
+          "content": "Fii ultimul care supravietuieste intr-o runda!"
+        },
+        { "type": "info", "content": "Zeci de carti cu pisici dragute!" },
+        { "type": "info", "content": "Un Exploding Kitten poate fi tras la orice moment!" },
+        { "type": "info", "content": "Foloseste-ti cu grija cartile, poate vei avea nevoie de ele!" },
+        { "type": "time", "content": "Runde rapide! (10-15 minute)" },
+        {"type":"players","content": "2-5 Jucatori"}
+      ]
+    },
+    {
+      "name": "Catan",
+      "description": ["point1", "point2", "point3"]
+    },
+    {
+      "name": "Monopoly",
+      "description": ["point1", "point2", "point3"]
+    },
+    {
+      "name": "Shit Happens",
+      "description": ["point1", "point2", "point3"]
+    }
+  ]
+}
