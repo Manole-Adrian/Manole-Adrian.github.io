@@ -38,8 +38,9 @@
     margin-right:0.5rem;
     margin-top:0.4rem;
     margin-left:0;
+    color:cornflowerblue
 }
-
+/* 
 .timeImg {
     color:orangered;
 }
@@ -54,7 +55,7 @@
 
 .objImg {
     color:firebrick
-}
+} */
 
 .descriptionContainer {
     display:flex;
