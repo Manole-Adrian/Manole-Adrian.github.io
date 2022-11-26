@@ -1,15 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 
 .gameContainer {
     background-color: white;
-    margin-top:5rem;
     width:fit-content;
-    margin:3rem auto;
+    margin:0 auto;
     padding:30px;
     border-radius:30px;
     list-style: none;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    z-index:4;
 }
+
 
 .gameTitle {
     margin:0;
@@ -40,23 +40,6 @@
     margin-left:0;
     color:cornflowerblue
 }
-/* 
-.timeImg {
-    color:orangered;
-}
-
-.infoImg {
-    color:cornflowerblue;
-}
-
-.playersImg {
-    color:green;
-}
-
-.objImg {
-    color:firebrick
-} */
-
 .descriptionContainer {
     display:flex;
 }
@@ -69,6 +52,7 @@
 .fadeIn {
     animation-name:fadeIn;
 }
+
 
 
 @keyframes fadeIn {

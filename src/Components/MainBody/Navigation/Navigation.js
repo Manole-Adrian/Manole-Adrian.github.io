@@ -7,29 +7,46 @@ export default function Navigation(props) {
   const pos3 = React.useRef();
   const pos4 = React.useRef();
 
+  const posRefArr = [React.useRef(),React.useRef(),React.useRef(),React.useRef()]
+
+  const [pawnX,setPawnX] = React.useState(0);
+  const [curButton, setCurButton] = React.useState(0);
+
+  function getPosition() {
+    const x = posRefArr[curButton].current.offsetLeft + (posRefArr[curButton].current.offsetWidth)/2;
+    console.log(curButton)
+    setPawnX(x) 
+  }
+
+  function changePawnPosition(newPos) {
+    setCurButton(newPos);
+  } 
+
   useEffect(() => {
-    console.log(pos1.current.offsetLeft);
-    console.log(pos2.current.offsetLeft);
-    console.log(pos3.current.offsetLeft);
-    console.log(pos4.current.offsetLeft);
+    getPosition();
   }, []);
+  useEffect(() => {
+    getPosition();
+  }, [curButton]);
+  
+
   return (
     <nav>
       <div className="navContainer">
-        <div ref={pos1} className="navButton">
+        <a href="#info" ref={posRefArr[0]} className={`navButton ${curButton === 0 ? 'navSelected' : ''}`} onClick={() => changePawnPosition(0)}>
           Introducere
-        </div>
-        <div ref={pos2} className="navButton">
+        </a>
+        <a  href="#gameList" ref={posRefArr[1]} className={`navButton ${curButton === 1 ? 'navSelected' : ''}`} onClick={() => changePawnPosition(1)}>
           Jocuri
-        </div>
-        <div ref={pos3} className="navButton">
+        </a>
+        <a ref={posRefArr[2]} className={`navButton ${curButton === 2 ? 'navSelected' : ''}`} onClick={() => changePawnPosition(2)}>
           Informatii
-        </div>
-        <div ref={pos4} className="navButton">
+        </a>
+        <a ref={posRefArr[3]} className={`navButton ${curButton === 3 ? 'navSelected' : ''}`} onClick={() => changePawnPosition(3)}>
           Inscriere
-        </div>
+        </a>
       </div>
-      <img src="./pawn.png" className="pawnImg" alt="pawn" ></img>
+      <img style={{left:pawnX}} src="./pawn.png" className="pawnImg" alt="pawn" ></img>
     </nav>
   );
 }

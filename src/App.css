@@ -1,14 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 
 
 body {
   height:100vh;
   background-color: firebrick;
-
+  font-family:'Inter'
 }
 
 html {
   height:100vh;
   overflow-x:hidden;
+  scroll-behavior: smooth;
 }
 
 main {

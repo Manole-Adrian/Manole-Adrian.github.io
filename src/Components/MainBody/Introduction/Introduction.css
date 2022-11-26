@@ -1,0 +1,26 @@
+.infoContainer {
+
+}
+
+.infoContent {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoBlock {
+    background-color: white;
+    width:300px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 4rem;
+    padding:25px;
+    border-radius:25px;
+}
+
+.infoImg {
+    width:300px;
+    height:200px;
+    object-fit:cover;
+}

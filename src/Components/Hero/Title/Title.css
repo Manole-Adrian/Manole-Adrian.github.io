@@ -44,5 +44,7 @@
     border-style:solid;
     border-width:2px;
     border-color:white;
-    width:fit-content
+    width:fit-content;
+    top:4rem;
+    margin-top:0;
 }
