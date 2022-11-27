@@ -1,3 +1,7 @@
+.gameList {
+    margin-bottom:5rem;
+}
+
 .vr {
   border-left: 6px solid rgb(58, 58, 219);
   height: 100px;
@@ -9,6 +13,7 @@
 .lineIn {
     animation:lineIn;
 }
+
 
 @keyframes lineIn {
     0% {

@@ -1,0 +1,10 @@
+{
+    "RuleList": [
+      {"img":"switch","content":"lorem ipsum"},
+      {"img":"teams","content":"lorem ipsum 2"},
+      {"img":"win","content":"lorem ipsum 3"},
+      {"img":"date","content":"lorem ipsum 4"},
+      {"img":"price","content":"lorem ipsum 5"}
+    ]
+  }
+  

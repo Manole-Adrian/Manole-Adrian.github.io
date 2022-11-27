@@ -15,7 +15,7 @@ export default function Game(props) {
       animatePreScroll={true}
       animateIn="fadeIn"
       animateOnce={true}
-      duration={1.5}
+      duration={1}
     >
       <Tilt
       className="Tilt"
