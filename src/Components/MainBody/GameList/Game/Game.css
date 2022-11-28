@@ -65,3 +65,12 @@
         transform:translateX(0%)
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .gameContentContainer {
+        flex-direction: column;;
+    }
+    .gameContainer {
+        padding:10px;
+    }
+  }

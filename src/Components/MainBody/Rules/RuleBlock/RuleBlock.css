@@ -16,7 +16,13 @@
     color:rgb(87, 87, 253);
 }
 
-.ruleContent {
+@media only screen and (max-width: 600px) {
 
-}
+    .ruleBlock:last-child {
+        grid-column-start:1;
+        grid-column-end: 3;
+        align-self:center;
+    }
+    
+  }
 

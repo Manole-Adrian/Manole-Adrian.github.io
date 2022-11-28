@@ -6,7 +6,7 @@ import Waves from './Waves/Waves'
 export default function Hero() {
     
 
-    return <section className='heroContainer'>
+    return <section className='heroContainer' id="top">
         <Title/>
         <Waves/>
 

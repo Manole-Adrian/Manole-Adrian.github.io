@@ -6,7 +6,7 @@ export default function Introduction() {
   return (
     <section className="infoSection" id="info">
       <div className="infoContainer">
-        <h1 className="sectionTitle"> Introducere! </h1>
+        <h1 className="sectionTitle"> Introducere </h1>
         <div className="infoContent">
           <AnimationOnScroll
             animatePreScroll={true}

@@ -17,6 +17,6 @@ export default function RuleBlock(props) {
         {props.img === "win" && <EmojiEventsIcon/>}
         {props.img === "date" && <DateRangeIcon/>}
         </div>
-        <p className='ruleContent'>{props.content}</p>
+        <p className={`ruleContent`}>{props.content}</p>
     </article>)
 }
