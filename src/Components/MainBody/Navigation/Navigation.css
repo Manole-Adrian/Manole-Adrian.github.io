@@ -55,3 +55,9 @@ nav {
 .navSelected {
   color:white !important;
 }
+
+@media only screen and (max-width: 600px) {
+  nav {
+    display:none;
+  }
+}

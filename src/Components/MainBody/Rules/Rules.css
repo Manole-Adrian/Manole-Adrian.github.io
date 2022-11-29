@@ -1,7 +1,12 @@
 .rulesContainer {
-  display: flex;
-  justify-content: center;
+  display:grid;
   margin-bottom: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-content:center;
+  width:75vw;
+  margin:0 auto;
 }
 
 @media only screen and (max-width: 600px) {
@@ -9,7 +14,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
+    grid-column-gap: 2rem;
     grid-row-gap: 1rem;
   }
   .rulesBlock:last-child {

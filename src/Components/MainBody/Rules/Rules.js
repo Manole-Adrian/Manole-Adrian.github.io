@@ -13,15 +13,15 @@ export default function Rules() {
       <div className="rulesContainer">
         {rulesData["RuleList"].map((el, i) => {
           return (
-            // <AnimationOnScroll
-            //   animatePreScroll={true}
-            //   animateIn="fadeIn"
-            //   animateOnce={true}
-            //   duration={1}
-            //   delay={i*200}
-            // >
+            <AnimationOnScroll
+              animatePreScroll={true}
+              animateIn="fadeIn"
+              animateOnce={true}
+              duration={1}
+              delay={i*200}
+            >
               <RuleBlock img={el.img} content={el.content} />
-            // </AnimationOnScroll>
+            </AnimationOnScroll>
           );
         })}
       </div>

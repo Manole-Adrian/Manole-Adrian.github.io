@@ -71,6 +71,17 @@
         flex-direction: column;;
     }
     .gameContainer {
-        padding:10px;
+        padding:20px;
+        width:80vw;
+    }
+    .gameInfoList {
+        font-size: 1.2rem;
+        margin:0rem;
+        padding:0rem;
+        transform:translateY(0%);
+    }
+    .gameImg {
+        margin:0rem auto;
+
     }
   }

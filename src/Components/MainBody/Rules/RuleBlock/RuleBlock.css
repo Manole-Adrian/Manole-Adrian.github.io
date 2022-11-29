@@ -1,5 +1,5 @@
 .ruleBlock {
-    margin: 0 2rem;
+    margin: 2rem auto;
     background-color: white;
     padding:25px;
     border-radius: 20px;
@@ -8,6 +8,8 @@
     flex-direction:column;
     justify-content: center;
     align-items: center;
+    width:fit-content;
+    align-self:center;
 }
 
 .ruleIcon {
@@ -18,11 +20,7 @@
 
 @media only screen and (max-width: 600px) {
 
-    .ruleBlock:last-child {
-        grid-column-start:1;
-        grid-column-end: 3;
-        align-self:center;
-    }
+    
     
   }
 
