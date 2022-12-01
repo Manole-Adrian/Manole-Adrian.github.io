@@ -1,6 +1,33 @@
 {
   "GameList": [
     {
+      "name": "Joc Surpriza!",
+      "description": [{
+        "type":"obj",
+        "content":"Fii primul la capat!"
+      },
+      {
+        "type":"info",
+        "content":"Cat de bine iti amintesti copilaria?"
+      },
+      {
+        "type":"info",
+        "content":"Pregateste-te sa razi alaturi de oponentii tai!"
+      },
+      {
+        "type":"info",
+        "content":"Un joc creat chiar de noi!"
+      },
+      {
+        "type":"time",
+        "content":"Runde medii! (20-30 minute)"
+      },
+      {
+        "type":"players",
+        "content":"2-4 Jucatori"
+      }]
+    },
+    {
       "name": "Exploding Kittens",
       "description": [
         {
@@ -15,16 +42,108 @@
       ]
     },
     {
-      "name": "Catan",
-      "description": ["point1", "point2", "point3"]
+      "name": "Uno Flip",
+      "description": [{
+        "type":"obj",
+        "content":"Fii primul care ramane fara carti in mana!"
+      },
+      {
+        "type":"info",
+        "content":"Un joc de petrecere clasic!"
+      },
+      {
+        "type":"info",
+        "content":"Creaza sau rupe prietenii cu un simplu +4"
+      },
+      {
+        "type":"time",
+        "content":"Runde rapide! (10-15 minute)"
+      },
+      {
+        "type":"players",
+        "content":"2+ Jucatori"
+      }]
     },
     {
       "name": "Monopoly",
-      "description": ["point1", "point2", "point3"]
+      "description": [{
+        "type":"obj",
+        "content":"Fii cel mai bogat jucator!"
+      },
+      {
+        "type":"info",
+        "content":"Un clasic joc de familie!"
+      },
+      {
+        "type":"info",
+        "content":"Razi de prietenii tai saraci!"
+      },
+      {
+        "type":"info",
+        "content":"Cumpara proprietati si devino din ce in ce mai bogat!"
+      },
+      {
+        "type":"time",
+        "content":"Runde lungi! (~40 minute)"
+      },
+      {
+        "type":"players",
+        "content":"2-4 Jucatori"
+      }]
     },
     {
-      "name": "Shit Happens",
-      "description": ["point1", "point2", "point3"]
+      "name": "Nu te supara frate",
+      "description": [{
+        "type":"obj",
+        "content":"Fii primul care ajunge la capat!"
+      },
+      {
+        "type":"info",
+        "content":"Un clasic joc de familie!"
+      },
+      {
+        "type":"info",
+        "content":"Da cu zarul si roaga-te la un numar mare!"
+      },
+      {
+        "type":"info",
+        "content":"Un joc cunoscut de toata lumea!"
+      },
+      {
+        "type":"time",
+        "content":"Runde medii! (20-30 minute)"
+      },
+      {
+        "type":"players",
+        "content":"2-4 Jucatori"
+      }]
+    },
+    {
+      "name": "Remi",
+      "description": [{
+        "type":"obj",
+        "content":"Fii primul care inchide!"
+      },
+      {
+        "type":"info",
+        "content":"Un clasic joc de familie!"
+      },
+      {
+        "type":"info",
+        "content":"Poate fi jucat in doua moduri clasice!"
+      },
+      {
+        "type":"info",
+        "content":"Imbina strategia cu un spirit competitiv!"
+      },
+      {
+        "type":"time",
+        "content":"Runde medii! (20-30 minute)"
+      },
+      {
+        "type":"players",
+        "content":"2-4 Jucatori"
+      }]
     }
   ]
 }

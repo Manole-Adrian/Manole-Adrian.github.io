@@ -37,7 +37,7 @@ export default function Introduction() {
             duration={1}
             delay={300}
           >
-            <div className="infoBlock">
+            <div className="infoBlock cardShadow">
               <img className="infoImg" src="introduction1.svg"></img>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
