@@ -13,20 +13,7 @@ export default function Team() {
     <section className="teamSection">
       <h1 className="sectionTitle">Echipa MELLISAAA</h1>
       <div className="teamContainer">
-        <AnimationOnScroll
-          animatePreScroll={true}
-          animateIn="fadeIn"
-          animateOnce={true}
-          duration={1.5}
-          delay={200}
-        >
             <Carousel animation="slide" duration={600} className="teamCarousel"  navButtonsAlwaysVisible={true}>
-          {/* {teamData["TeamList"].map((el, i) => {
-            return (
-              
-                <Member name={el["name"]} rank={el["rank"]} />
-                )
-            })} */}
             <div className="setContainer">
                 <Member name={teamData["TeamList"][0]["name"]} />
                 <Member name={teamData["TeamList"][1]["name"]} />
@@ -43,8 +30,6 @@ export default function Team() {
                 <Member name={teamData["TeamList"][8]["name"]} />
             </div>
             </Carousel>
-        </AnimationOnScroll>
-        
       </div>
     </section>
   );

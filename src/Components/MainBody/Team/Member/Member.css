@@ -9,9 +9,6 @@
     flex-direction:column;
     }
 
-.memberBlock:first-child {
-    margin-left:0rem;
-}
 
 .memberBlock > img {
     width:150px;
@@ -33,3 +30,14 @@
     font-weight:bold;
     font-size:2rem;
 }
+
+@media only screen and (max-width: 600px) {
+    
+    .memberBlock {
+        width:120px;
+    }
+    .memberBlock > img {
+        width:90px;
+    }
+  }
+  
