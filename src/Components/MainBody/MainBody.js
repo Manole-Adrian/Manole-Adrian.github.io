@@ -4,6 +4,7 @@ import Introduction from './Introduction/Introduction'
 import "./MainBody.css"
 import Navigation from './Navigation/Navigation'
 import Rules from './Rules/Rules'
+import Team from './Team/Team'
 
 export default function MainBody() {
 
@@ -13,5 +14,6 @@ export default function MainBody() {
         <Introduction />
         <Rules/>
         <GameList/>
+        <Team/>
     </section>
 }

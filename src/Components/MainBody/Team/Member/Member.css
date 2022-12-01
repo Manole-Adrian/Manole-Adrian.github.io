@@ -1,0 +1,36 @@
+.memberBlock {
+    margin:0 2rem;
+    padding:5px;
+    background-color: white;
+    border-radius:10px;
+    width:140px;
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.memberBlock:first-child {
+    margin-left:0rem;
+}
+
+.memberBlock > img {
+    width:120px;
+    aspect-ratio: 1;
+    align-self:center;
+    border-radius:50%;
+    transition:filter .3s ease;
+}
+.memberBlock > img:hover {
+    filter:grayscale() brightness(50%);
+}
+
+.memberBlock > p {
+    font-size:1.5rem;
+    text-align:center;
+}
+
+.memberBlock > p::first-letter {
+    font-weight:bold;
+    font-size:2rem;
+}

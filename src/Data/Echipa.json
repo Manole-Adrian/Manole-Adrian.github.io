@@ -1,0 +1,13 @@
+{
+  "TeamList": [
+    { "name": "Mihaela", "rank": "aderent" },
+    { "name": "Elena", "rank": "aderent" },
+    { "name": "Larisa", "rank": "aderent" },
+    { "name": "Laurentiu", "rank": "aderent" },
+    { "name": "Ionut", "rank": "mentor" },
+    { "name": "Sergiu", "rank": "aderent" },
+    { "name": "Alexia", "rank": "mentor" },
+    { "name": "Alina", "rank": "aderent" },
+    { "name": "Adrian", "rank": "aderent" }
+  ]
+}

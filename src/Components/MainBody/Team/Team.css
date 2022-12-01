@@ -1,0 +1,16 @@
+.teamContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom:10rem;
+    padding:5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .teamContainer {
+        overflow-x:scroll;
+        justify-content: left;
+    }
+    
+  }
+  
