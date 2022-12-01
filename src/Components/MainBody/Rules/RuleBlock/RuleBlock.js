@@ -9,7 +9,7 @@ import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import CheckroomIcon from '@mui/icons-material/Checkroom';
 
 export default function RuleBlock(props) {
-    return (<article className='ruleBlock'>
+    return (<article className='ruleBlock cardShadow'>
         <div className='ruleIcon'>
 
         {props.img === "switch" && <WifiProtectedSetupIcon className='test'/>}

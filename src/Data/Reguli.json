@@ -1,11 +1,11 @@
 {
     "RuleList": [
-      {"img":"switch","content":"lorem ipsum"},
-      {"img":"teams","content":"lorem ipsum 2"},
-      {"img":"win","content":"lorem ipsum 3"},
-      {"img":"date","content":"lorem ipsum 4"},
-      {"img":"price","content":"lorem ipsum 5"},
-      {"img":"clothes","content":"lorem ipsum 6"}
+      {"img":"switch","content":"Odata la 20 de minute, jucatorii dintr-o echipa se vor muta intre ei!"},
+      {"img":"teams","content":"Jucatorii vor fi impartiti in 4 echipe!"},
+      {"img":"win","content":"Echipa castigatoare va primi un premiu!"},
+      {"img":"date","content":"Data si locatia inca nu sunt cunoscute =("},
+      {"img":"price","content":"Pretul de intrare va fi de 10 RON."},
+      {"img":"clothes","content":"Dress code-ul este: Pijamale!"}
     ]
   }
   

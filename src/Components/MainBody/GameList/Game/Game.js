@@ -24,7 +24,7 @@ export default function Game(props) {
       scale={1.01}
       transitionSpeed={200}>
       <div>
-        <li className="gameContainer">
+        <li className="gameContainer cardShadow">
           <h3 className="gameTitle">
             {props.name}
           </h3>

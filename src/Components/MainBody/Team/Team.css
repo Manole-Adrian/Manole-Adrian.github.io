@@ -1,8 +1,21 @@
 .teamContainer {
-    display: flex;
+
+}
+
+.setContainer {
+    display:flex;
     justify-content: center;
-    margin-bottom:10rem;
-    padding:5rem;
+    margin:0 auto;
+}
+
+.teamCarousel {
+    width:50%;
+    margin:0 auto;
+}
+
+.teamSection {
+    background-color: rgb(130, 145, 214);
+  padding-bottom:3rem;
 }
 
 @media only screen and (max-width: 600px) {

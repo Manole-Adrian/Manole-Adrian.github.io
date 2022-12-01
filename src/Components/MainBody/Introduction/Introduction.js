@@ -14,7 +14,7 @@ export default function Introduction() {
             animateOnce={true}
             duration={1}
           >
-            <div className="infoBlock">
+            <div className="infoBlock cardShadow">
               <img className="infoImg" src="introduction2.svg"></img>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting

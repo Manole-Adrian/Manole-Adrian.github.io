@@ -9,12 +9,17 @@
   margin:0 auto;
 }
 
+#rules {
+  background-color: rgb(130, 145, 214);
+  padding:3rem;
+}
+
 @media only screen and (max-width: 600px) {
   .rulesContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 2rem;
+    grid-column-gap: 1rem;
     grid-row-gap: 1rem;
   }
   .rulesBlock:last-child {

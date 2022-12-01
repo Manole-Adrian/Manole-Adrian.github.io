@@ -32,7 +32,7 @@ export default function Navigation(props) {
 
   return (
     <nav>
-      <div className="navContainer">
+      <div className="navContainer cardShadow">
         <a href="#info" ref={posRefArr[0]} className={`navButton ${curButton === 0 ? 'navSelected' : ''}`} onClick={() => changePawnPosition(0)}>
           Introducere
         </a>

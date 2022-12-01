@@ -2,7 +2,7 @@
     border-color:none;
     color:white;
     position:absolute;
-    top:0;
+    top:5rem;
     left:50vw;
     transform:translateX(-50%);
     text-align:center;
@@ -23,7 +23,7 @@
 
 .subtitle {
     font-size:2rem;
-    color:gray;
+    color:white;
     margin:0;
     transform:scale(100%);
     transition: width .2s, height .2s;
