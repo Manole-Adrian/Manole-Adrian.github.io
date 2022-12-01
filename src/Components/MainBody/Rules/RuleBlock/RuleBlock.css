@@ -21,7 +21,9 @@
 
 @media only screen and (max-width: 600px) {
 
-    
+    .ruleBlock {
+        padding:10px;
+    }
     
   }
 

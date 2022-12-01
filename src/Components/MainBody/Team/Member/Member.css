@@ -35,6 +35,7 @@
     
     .memberBlock {
         width:120px;
+        margin: 0 0.25rem;
     }
     .memberBlock > img {
         width:90px;
