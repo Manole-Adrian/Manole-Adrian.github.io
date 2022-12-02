@@ -11,8 +11,7 @@
 .teamCarousel {
     width:50%;
     margin:0 auto;
-    cursor:grab;
-}
+    cursor:grab;}
 
 .teamSection {
     background-color: rgb(130, 145, 214);
@@ -25,6 +24,6 @@
         width:100%;
 
     }
-    
+
   }
   

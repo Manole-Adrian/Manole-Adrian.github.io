@@ -17,16 +17,13 @@ export default function Introduction() {
             <div className="infoBlock cardShadow">
               <img className="infoImg" src="introduction2.svg"></img>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
+                Vă era dor sa intrați în era copiilor, măcar pentru puțin timp?
+                Echipa MELLISAAA vă aduce această mică bucurie pe data de
+                07.12.2022, într-o zi de miercuri. Ați mai fost cumva la
+                DISNAYLAND? Dacă nu, nicio problemă! Aducem noi, din desene,
+                prinții și prințesele la Politehnică să ne ajute să trecem mai
+                ușor peste sesiune! Ne vor ajuta să ne relaxăm câteva ore și să
+                ne distrăm la maxim cu o seară de NIGHT BOARD GAMES!
               </p>
             </div>
           </AnimationOnScroll>
@@ -40,16 +37,14 @@ export default function Introduction() {
             <div className="infoBlock cardShadow">
               <img className="infoImg" src="introduction1.svg"></img>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
+                O să aveți ocazia să jucați toate jocurile puse la dispoziție
+                într-un anumit interval de timp pentru că… TIME SWITCH!!! Fiind
+                și denumirea evenimentului nostru! Din adulți deveniți copii! 😁
+                Ca la final să folosim o poțiune magică să vă transformăm înapoi
+                în cei mai tari studenți! Suntem o echipă implicată și dornică
+                de amuzament care a dorit să readucă nostalgia de copilărie în
+                zilele noastre de studenție! Vă așteptăm în număr cât mai mare
+                și cu chef de distracție! 🧚🏼‍♀️🧞‍♀️🧜🏼‍♀️
               </p>
             </div>
           </AnimationOnScroll>
