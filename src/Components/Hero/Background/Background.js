@@ -3,5 +3,7 @@ import "./Background.css"
 
 export default function Background() {
 
-    return(<div>TEST</div>)
+    return(<img src='hero-banner.jpg' className='heroBannerImg' alt='damn'>
+
+    </img>)
 }

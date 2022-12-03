@@ -1,23 +1,27 @@
 .ruleBlock {
-    margin: 2rem auto;
-    background-color: white;
+    width:100%;
+    height:450px;
+}
+
+.ruleBlockImage {
+    position:absolute;
+    width:33%;
+    height:100%;
+    object-fit: cover;
+    z-index: -1;
+    filter:grayscale(50%) brightness(30%);
+}
+
+.ruleContent {
+    font-size: 3rem;
+    font-weight:bold;
     padding:25px;
-    border-radius: 20px;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    width:150px;
-    align-self:center;
-    aspect-ratio: 1;
+    margin-top:50%;
+    padding-top:0px;
+    transform:translateY(-50%);
     text-align: center;
 }
 
-.ruleIcon {
-    transform:scale(2.5);
-    margin:1rem;
-    color:rgb(87, 87, 253);
-}
 
 @media only screen and (max-width: 600px) {
 

@@ -1,33 +1,81 @@
-.gameList {
-    margin-bottom:5rem;
+
+
+.gamesSection {
+    position:absolute;
+    top:-50vh;
+    color:white;
+    width:100%;
+    background-color:var(--primary-color);
+    height:100vh;
+    transition:top .6s ease;
+    transition-delay:.6s;
+    z-index:4;
 }
 
-.vr {
-  border-left: 6px solid aliceblue;
-  height: 100px;
-  margin: 0 50%;
-  position: relative;
-  z-index: 1;
-}
-
-.lineIn {
-    animation:lineIn;
-}
-
-
-@keyframes lineIn {
-    0% {
-        opacity:0%;
-        transform:translateY(-50%) scaleY(0%);
-    }
-    100% {
-        opacity:100%;
-        transform:translateY(0%) scaleY(100%);
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .gameList {
-        padding:0rem;
-    }
+.sectionHidden {
+    top:-150vh;
   }
+
+.gamesTitle {
+    position:absolute;
+    right:3rem;
+    top:5rem;
+    text-align:right;
+    padding:25px;
+    background-color: var(--secondary-color);
+    border-radius:25px;
+    transition:right .4s ease;
+    transition-delay:.2s;
+}
+
+.titleHidden {
+    right:-100vw;
+}
+
+.gamesTitle > h2 {
+    margin:0rem;
+    padding:0rem;
+    font-size:3rem;
+    color:var(--primary-color)
+}
+
+.gamesTitle > h1 {
+    margin:0rem;
+    font-size:4rem;
+}
+
+.gamesText {
+    position:absolute;
+    left:300px;
+    top:5rem;
+    font-size:1.75rem;
+    width:620px;
+    background-color: var(--secondary-color);
+    padding:25px;
+    border-radius:25px;
+}
+
+.futureGame {
+    position:absolute;
+    right:3rem;
+    top:20rem;
+    width:800px;
+    background-color: var(--secondary-color);
+    height:400px;
+    text-align: center;
+    line-height: 400px;
+    font-size:10rem;
+    color: var(--fourth-color);
+    border-radius:25px;
+}
+
+.gamesContainer {
+    position:absolute;
+    left:300px;
+    top:20rem;
+    display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 3rem;
+grid-row-gap: 1rem;
+}

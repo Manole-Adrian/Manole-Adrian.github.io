@@ -1,0 +1,93 @@
+.navContainer {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  align-content:center;
+  position:relative;
+  width: 150px;
+  margin: auto;
+  padding: 0 25px;
+  flex: 1;
+   color:white;
+   height:50%;
+  top:50vh;
+  transform: translateY(-50%);
+   
+   
+  }
+
+  nav:hover {
+    opacity:100%;
+  }
+  
+a:link {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+nav {
+  position:absolute;
+  left:00%;
+  height:100vh;
+  background-color: var(--primary-color);
+  border-right-style: solid;
+  border-right-width: 5px;
+  border-right-color: var(--secondary-color);
+  z-index:10;
+  animation: speedInLeft .6s ease;
+  opacity:75%;
+  transition:all .3s ease;
+}
+
+.navButton {
+  flex: 1;
+  font-size:3rem;
+  text-align: center;
+  cursor:pointer;
+  color:var(--primary-color);
+  transition:all .3s ease;
+  align-self:center;
+  padding:25px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  font-weight:bold;
+  margin-top:2rem;
+}
+
+.navButton:hover {
+  color:white;
+}
+
+.pawnImg {
+    width:40px;
+    position:absolute;
+    top:-1rem;
+    transform:translateX(-50%);
+    transition: left .5s ease;
+}
+
+.navSelected {
+  color:var(--tertiary-color) !important;
+}
+
+@keyframes speedInLeft {
+  0% {
+    left:-50%;
+  }
+  100% {
+    left:0%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    display:none;
+  }
+}

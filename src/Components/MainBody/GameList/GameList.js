@@ -1,34 +1,39 @@
 import React from "react";
 import "./GameList.css";
 import Game from "./Game/Game";
-import { AnimationOnScroll } from "react-animation-on-scroll";
 
 import gamesData from "../../../Data/Jocuri.json";
 
-export default function GameList() {
+export default function GameList(props) {
+
+  const [curGame,setCurGame] = React.useState(-1);
+
+  function handleClick(num) {
+    if (curGame === num) {
+      setCurGame(-1)
+    } else {
+      setCurGame(num)
+    }
+  }
+
   return (
-    <section  id="gameList">
-      <h2 className="sectionTitle">Jocuri</h2>
-      <ul className="gameList">
-        {gamesData["GameList"].map((el, i) => {
-          return (
-            <article>
-              {i !== 0 && (
-                <AnimationOnScroll
-                  animatePreScroll={true}
-                  animateIn="lineIn"
-                  animateOnce={true}
-                  duration={1}
-                  delay={500}
-                >
-                  <div className="vr"></div>
-                </AnimationOnScroll>
-              )}
-              <Game name={el["name"]} descriptionArr={el["description"]} />
-            </article>
-          );
+    <section  className="gamesSection">
+      <div className={`gamesTitle ${props.curTab > 2 ? "titleHiddenGames" : ""}`}>
+        <h2>03</h2>
+        <h1>JOCURI</h1>
+      </div>
+      <div className="futureGame">
+        ?
+      </div>
+      <div className="gamesContainer">
+        {gamesData["GameList"].map((el,i) => {
+          return <Game name={el["name"]} descriptionArr={el["description"]} iter={i} curGame={curGame} setFunc={() => {handleClick(i)}} />
         })}
-      </ul>
+      </div>
+      <div className="gamesText">
+        In cadrul evenimentului principal vor fi 6 jocuri.  <br/> In orele de Board Gaming & Chill, oricine se va putea juca orice, inclusiv jocuri care nu sunt aici.
+      </div>
+      
     </section>
   );
 }

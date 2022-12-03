@@ -20,6 +20,7 @@ export default function Navigation(props) {
 
   function changePawnPosition(newPos) {
     setCurButton(newPos);
+    props.setCurTab(newPos)
   } 
 
   useEffect(() => {
@@ -32,21 +33,21 @@ export default function Navigation(props) {
 
   return (
     <nav>
-      <div className="navContainer cardShadow">
-        <a href="#info" ref={posRefArr[0]} className={`navButton ${curButton === 0 ? 'navSelected' : ''}`} onClick={() => changePawnPosition(0)}>
-          Introducere
+      <div className="navContainer">
+        <a ref={posRefArr[0]} className={`navButton ${curButton === 0 ? 'navSelected' : ''}`} onClick={() => changePawnPosition(0)}>
+          01
         </a>
-        <a href="#rules" ref={posRefArr[2]} className={`navButton ${curButton === 2 ? 'navSelected' : ''}`} onClick={() => changePawnPosition(2)}>
-          Informatii
+        <a ref={posRefArr[1]} className={`navButton ${curButton === 1 ? 'navSelected' : ''}`} onClick={() => changePawnPosition(1)}>
+          02
         </a>
-        <a  href="#gameList" ref={posRefArr[1]} className={`navButton ${curButton === 1 ? 'navSelected' : ''}`} onClick={() => changePawnPosition(1)}>
-          Jocuri
+        <a ref={posRefArr[2]} className={`navButton ${curButton === 2 ? 'navSelected' : ''}`} onClick={() => changePawnPosition(2)}>
+          03
         </a>
         <a ref={posRefArr[3]} className={`navButton ${curButton === 3 ? 'navSelected' : ''}`} onClick={() => changePawnPosition(3)}>
-          Inscriere
+          04
         </a>
       </div>
-      <img style={{left:pawnX}} src="./pawn.png" className="pawnImg" alt="pawn" ></img>
+      {/* <img style={{left:pawnX}} src="./pawn.png" className="pawnImg" alt="pawn" ></img> */}
     </nav>
   );
 }

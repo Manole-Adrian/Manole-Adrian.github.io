@@ -3,7 +3,7 @@
 
 body {
   height:100vh;
-  background-color: firebrick;
+  background-color: black;
   font-family:'Inter';
   
 }
@@ -18,8 +18,12 @@ main {
   position:relative;
   z-index:1;
   height:100%;
+  
+  --primary-color:#BD9391;
+  --secondary-color:#7B435B;
+  --secondary-color-transparent:rgba(35, 61, 77,0.5);
+  --tertiary-color:#672A4E;
+  --fourth-color:#8BE8CB;
+  --fifth-color:#303633;
 }
 
-.cardShadow {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}

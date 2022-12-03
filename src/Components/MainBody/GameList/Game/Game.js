@@ -11,25 +11,11 @@ import Tilt from 'react-parallax-tilt';
 
 export default function Game(props) {
   return (
-    <AnimationOnScroll
-      animatePreScroll={true}
-      animateIn="fadeIn"
-      animateOnce={true}
-      duration={1}
-    >
-      <Tilt
-      className="Tilt"
-      tiltMaxAngleX={2}
-      tiltMaxAngleY={2}
-      scale={1.01}
-      transitionSpeed={200}>
-      <div>
-        <li className="gameContainer cardShadow">
-          <h3 className="gameTitle">
-            {props.name}
-          </h3>
+        // props.iter props.curGame props.setFunc
+      
+        <li className={`gameContainer ${props.curGame === props.iter ? "selectedGame" : ""}`} onClick={props.setFunc}>
           <div className="gameContentContainer">
-            <div className="gameInfoContainer">
+            {props.curGame === props.iter && <div className="gameInfoContainer">
               <ul className="gameInfoList">
                 {props.descriptionArr.map((el) => {
                   console.log(el.type);
@@ -52,7 +38,7 @@ export default function Game(props) {
                   );
                 })}
               </ul>
-            </div>
+            </div>}
             <img
               className="gameImg"
               src={`${props.name}.webp`}
@@ -60,8 +46,6 @@ export default function Game(props) {
             ></img>
           </div>
         </li>
-      </div>
-      </Tilt>
-    </AnimationOnScroll>
+      
   );
 }

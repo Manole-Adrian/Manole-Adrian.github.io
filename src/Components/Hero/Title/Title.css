@@ -2,18 +2,20 @@
     border-color:none;
     color:white;
     position:absolute;
-    top:5rem;
     left:50vw;
     transform:translateX(-50%);
     text-align:center;
     margin:none;
     padding:none;
     width:fit-content;
-    margin-top:5rem;
+    margin-top:10rem;
     font-size:4rem;
     z-index:2;
-    transition: left .6s, font-size .6s, position .6s,background-color .2s,transform .6s,border-width .6s,border-radius .6s;
-    transition-timing-function: ease-out;
+    transition:margin-top .3s ease;
+}
+
+.titleContainerUp {
+    margin-top:2rem;
 }
 
 .title {
@@ -30,6 +32,7 @@
     width:fit-content;
     margin:0 auto;
     height:fit-content;
+    font-weight:normal !important;
 }
 
 .disappear {

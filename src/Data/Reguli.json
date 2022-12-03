@@ -1,11 +1,11 @@
 {
     "RuleList": [
-      {"img":"switch","content":"Odata la 20 de minute, jucatorii dintr-o echipa se vor muta intre ei!"},
-      {"img":"teams","content":"Jucatorii vor fi impartiti in 4 echipe!"},
-      {"img":"win","content":"Echipa castigatoare va primi un premiu!"},
-      {"img":"date","content":"Evenimentul va avea loc pe 7 Dec. Locatia este necunoscuta"},
-      {"img":"price","content":"Pretul de intrare va fi de 10 RON."},
-      {"img":"clothes","content":"Dress code-ul este: Pijamale!"}
+      {"img":"switch.jpg","content":"20 de minute intre schimbari!"},
+      {"img":"teams.jpg","content":"4 Echipe"},
+      {"img":"winner.jpg","content":"Echipa castigatoare va primi un premiu!"},
+      {"img":"date.jpg","content":"7 Dec, la -LOC NEC-"},
+      {"img":"price.jpg","content":"10 RON"},
+      {"img":"clothes.webp","content":"Dress Code: Pijamale!"}
     ]
   }
   

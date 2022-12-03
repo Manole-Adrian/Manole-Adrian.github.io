@@ -1,0 +1,22 @@
+.heroButton {
+    z-index:3;
+    position:absolute;
+    left:50vw;
+    transform:translateX(-50%);
+    top:60vh;
+    width:300px;
+    text-align:center;
+    font-size: 2rem;
+    padding:10px 40px;
+    border-style:solid;
+    border-width:3px;
+    border-color:white;
+    color:white;
+    transition:background-color .3s ease, opacity .3s ease, transform 6s ease;
+    cursor: pointer;
+}
+
+.heroButton:hover {
+    background-color:gray
+}
+

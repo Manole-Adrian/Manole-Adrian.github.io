@@ -2,18 +2,17 @@ import React from 'react'
 import GameList from './GameList/GameList'
 import Introduction from './Introduction/Introduction'
 import "./MainBody.css"
-import Navigation from './Navigation/Navigation'
 import Rules from './Rules/Rules'
 import Team from './Team/Team'
 
-export default function MainBody() {
+export default function MainBody(props) {
 
+    
 
     return <section className='mainBodyContainer'>
-        <Navigation />
-        <Introduction />
-        <Rules/>
-        <GameList/>
-        <Team/>
+        <Introduction curTab={props.curTab} />
+        <Rules  curTab={props.curTab}/>
+        <GameList curTab={props.curTab}/>
+        {/* <Team curTab={props.curTab}/> */}
     </section>
 }

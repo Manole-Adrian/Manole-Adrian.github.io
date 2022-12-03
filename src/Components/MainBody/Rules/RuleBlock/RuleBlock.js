@@ -10,15 +10,7 @@ import CheckroomIcon from '@mui/icons-material/Checkroom';
 
 export default function RuleBlock(props) {
     return (<article className='ruleBlock cardShadow'>
-        <div className='ruleIcon'>
-
-        {props.img === "switch" && <WifiProtectedSetupIcon className='test'/>}
-        {props.img === "teams" && <PeopleAltIcon/>}
-        {props.img === "price" && <SellIcon/>}
-        {props.img === "win" && <EmojiEventsIcon/>}
-        {props.img === "date" && <DateRangeIcon/>}
-        {props.img === "clothes" && <CheckroomIcon/>}
-        </div>
+        <img className='ruleBlockImage' src={props.img} alt="damn"></img>
         <p className={`ruleContent`}>{props.content}</p>
     </article>)
 }
