@@ -29,6 +29,7 @@
     .ruleBlock {
         height:300px;
         width:100%;
+
     }
     .ruleContent {
         font-size:2rem;
@@ -40,5 +41,6 @@
         transform:translateY(-50%)
     }
     
+
   }
 
