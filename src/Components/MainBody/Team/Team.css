@@ -75,12 +75,14 @@
 
     .teamApplyButton {
         left:10px;
-        margin-bottom:4rem;
-        bottom:0;
+        top:28rem;
+        bottom:auto;
         visibility:hidden;
         left: 50%;
         transform:translateX(-50%);
         width:fit-content;
+        display:inline-block;
+        position:absolute;
     }
 
     .teamApplyButton::after {
@@ -92,6 +94,7 @@
     border-color:var(--secondary-color);
     width:70vw;
     padding:5px;
+    display:block;
     }
 
     .teamText {

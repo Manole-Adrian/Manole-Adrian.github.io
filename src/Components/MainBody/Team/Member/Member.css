@@ -48,7 +48,7 @@
         transform:translateX(-50%);
     }
     .memberBlock >img {
-        width:90px;
+        width:80px;
     }
     .memberBlock:only-child {
         position:absolute;
