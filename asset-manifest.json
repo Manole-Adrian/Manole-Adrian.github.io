@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.626bae3b.css",
+    "main.css": "/static/css/main.9d29c5e0.css",
     "main.js": "/static/js/main.15511823.js",
     "static/js/787.6834fea3.chunk.js": "/static/js/787.6834fea3.chunk.js",
     "static/media/trianglify-bg.png": "/static/media/trianglify-bg.8b0f7090ef3e4cb5f11f.png",
     "index.html": "/index.html",
-    "main.626bae3b.css.map": "/static/css/main.626bae3b.css.map",
+    "main.9d29c5e0.css.map": "/static/css/main.9d29c5e0.css.map",
     "main.15511823.js.map": "/static/js/main.15511823.js.map",
     "787.6834fea3.chunk.js.map": "/static/js/787.6834fea3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.626bae3b.css",
+    "static/css/main.9d29c5e0.css",
     "static/js/main.15511823.js"
   ]
 }
