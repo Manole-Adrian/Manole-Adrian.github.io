@@ -13,6 +13,6 @@ export default function MainBody(props) {
         <Introduction curTab={props.curTab} />
         <Rules  curTab={props.curTab}/>
         <GameList curTab={props.curTab}/>
-        {/* <Team curTab={props.curTab}/> */}
+        <Team curTab={props.curTab}/>
     </section>
 }

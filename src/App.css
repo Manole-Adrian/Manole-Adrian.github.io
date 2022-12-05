@@ -10,7 +10,7 @@ body {
 
 html {
   height:100vh;
-  overflow-x:hidden;
+  overflow:hidden;
   scroll-behavior: smooth;
 }
 
@@ -19,11 +19,10 @@ main {
   z-index:1;
   height:100%;
   
-  --primary-color:#BD9391;
-  --secondary-color:#7B435B;
-  --secondary-color-transparent:rgba(35, 61, 77,0.5);
-  --tertiary-color:#672A4E;
-  --fourth-color:#8BE8CB;
-  --fifth-color:#303633;
+  --primary-color:#f1e6d9;
+  --secondary-color:#B73C58;
+  --tertiary-color:#000000;
+  --fourth-color:#3c74b7;
+  --fifth-color:#2F2F2F;
 }
 

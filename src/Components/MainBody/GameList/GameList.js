@@ -15,24 +15,26 @@ export default function GameList(props) {
       setCurGame(num)
     }
   }
+  React.useEffect(() => {
+    if (props.curTab !== -1) {
+      setCurGame(-1);
+    }
+  },[props.curTab])
 
   return (
-    <section  className="gamesSection">
+    <section  className={`gamesSection ${props.curTab > 2 ? "sectionHidden" : ""}`}>
       <div className={`gamesTitle ${props.curTab > 2 ? "titleHiddenGames" : ""}`}>
-        <h2>03</h2>
         <h1>JOCURI</h1>
       </div>
-      <div className="futureGame">
+      {curGame === -1 && <div className="futureGame">
         ?
-      </div>
+      </div>}
       <div className="gamesContainer">
         {gamesData["GameList"].map((el,i) => {
           return <Game name={el["name"]} descriptionArr={el["description"]} iter={i} curGame={curGame} setFunc={() => {handleClick(i)}} />
         })}
       </div>
-      <div className="gamesText">
-        In cadrul evenimentului principal vor fi 6 jocuri.  <br/> In orele de Board Gaming & Chill, oricine se va putea juca orice, inclusiv jocuri care nu sunt aici.
-      </div>
+      
       
     </section>
   );

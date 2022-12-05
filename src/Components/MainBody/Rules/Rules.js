@@ -9,7 +9,6 @@ export default function Rules(props) {
   return (
     <section className={`rulesSection ${props.curTab > 1 ? "sectionHidden" : ""}`}>
       <div className={`rulesTitle ${props.curTab > 1 ? "titleHiddenRules" : ""}`}>
-        <h2>02</h2>
         <h1>INFORMATII</h1>
       </div>
       <div className="rulesText">

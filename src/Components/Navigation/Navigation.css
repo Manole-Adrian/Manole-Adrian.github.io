@@ -5,7 +5,7 @@
   align-items: center;
   align-content:center;
   position:relative;
-  width: 150px;
+  width: 100px;
   margin: auto;
   padding: 0 25px;
   flex: 1;
@@ -62,7 +62,7 @@ nav {
 }
 
 .navButton:hover {
-  color:white;
+  color:var(--fifth-color);
 }
 
 .pawnImg {

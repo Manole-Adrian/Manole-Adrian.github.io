@@ -1,12 +1,16 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+
 .infoSection {
     position:absolute;
     top:-50vh;
-    color:white;
+    color:var(--tertiary-color);
     width:100%;
     background-color:var(--primary-color);
+    
+    background-image:url("../../../../public/trianglify-bg.png");
+    background-size:cover;
     height:100vh;
     transition:top .6s ease;
-    transition-delay:.6s;
     z-index:6;
 }
 
@@ -16,26 +20,18 @@
 
 .infoTitle {
     position:absolute;
-    right:3rem;
+    left:200px;
     top:5rem;
     text-align:right;
-    padding:25px;
-    background-color: var(--secondary-color);
-    border-radius:25px;
-    transition:right .4s ease;
-    transition-delay:.2s;
+    padding-bottom:10px;
+    /* background-color: var(--secondary-color); */
+    transition:left .4s ease;
+    border-bottom-style:solid;
+    border-width:5px;
+    border-color:var(--secondary-color);
+    font-weight:700 !important;
 }
 
-.titleHidden {
-    right:-100vw;
-}
-
-.infoTitle > h2 {
-    margin:0rem;
-    padding:0rem;
-    font-size:3rem;
-    color:var(--primary-color)
-}
 
 .infoTitle > h1 {
     margin:0rem;
@@ -44,28 +40,93 @@
 
 .infoText {
     position:absolute;
-    left:300px;
-    top:5rem;
+    left:200px;
+    top:15rem;
     font-size:1.75rem;
-    width:45%;
-    background-color: var(--secondary-color);
-    padding:25px;
-    border-radius:25px;
+    width:35%;
+
 }
 
-.infoImg {
+.infoCountdown {
     position:absolute;
-    top:20rem;
+    bottom:5rem;
     right:3rem;
-    width:400px;
+    width:450px;
     transition:right .4s ease;
     padding:25px;
-    background-color: var(--secondary-color);
-    border-radius:50%;
+    /* background-color: var(--secondary-color); */
+    border-radius:25px;
     object-fit: cover;
-    aspect-ratio: 1;
+    text-align:center;
+    font-size:4rem;
+    font-weight:bold;
 }
 
-.imgHidden {
-    right: -100vw;
+.applyButton {
+    position:absolute;
+    bottom:10rem;
+    left:250px;
+    font-size:2.5rem;
+    padding:10px 35px; 
+    background: none;
+    box-shadow:none;
+    border-style:solid;
+    border-width:3px;
+    border-color:var(--secondary-color);
+    color:var(--tertiary-color);
+    text-align:center;
+    transition:color .3s ease, transform .3s ease, background-color .3s ease;
+    font-weight: bold;
+}
+
+.applyButton:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+
+}
+
+.applyIcon {
+    font-size:2rem !important; 
+    position:relative;
+    top:.25rem;
+    transform:scaleX(1.25) scaleY(1.2);
+}
+
+.decoImg1 {
+    width:300px;
+    transform:rotate(20deg);
+    position:absolute;
+    right:20rem;
+    top:2rem;
+    animation: gameSwing 5s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+.decoImg2 {
+    width:300px;
+    transform:rotate(20deg);
+    position:absolute;
+    right:2rem;
+    top:7rem;
+    animation: gameSwing 3s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+
+.decoBlob {
+    position:absolute;
+    width:600px;
+    right:5rem;
+    top:-1rem;
+    opacity:0.5;
+    z-index:-1;
+}
+
+@keyframes gameSwing {
+    0% {
+        transform:rotate(40deg);
+    }   
+    100% {
+        transform:rotate(0deg);
+    } 
 }

@@ -1,29 +1,38 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+
 .memberBlock {
     margin:0 1rem;
-    padding:5px;
-    background-color: white;
     border-radius:10px;
-    width:200px;
+    width:120px;
     display:flex;
     justify-content: center;
     flex-direction:column;
-    }
+    transition:transform .3s ease;    
+}
 
+.memberBlock:hover {
+    transform:scale(1.05)
+}
 
 .memberBlock > img {
-    width:150px;
+    width:120px;
     aspect-ratio: 1;
     align-self:center;
     border-radius:50%;
     transition:filter .3s ease;
+    border-style:solid;
+    border-width:5px;
+    border-color:var(--primary-color);
+    animation:bounce 2s ease;
+    animation-iteration-count: infinite;;
+    object-fit: cover;
 }
-.memberBlock > img:hover {
-    filter:grayscale() brightness(50%);
-}
+
 
 .memberBlock > p {
     font-size:1.5rem;
     text-align:center;
+    margin:0;
 }
 
 .memberBlock > p::first-letter {
@@ -31,14 +40,4 @@
     font-size:2rem;
 }
 
-@media only screen and (max-width: 600px) {
-    
-    .memberBlock {
-        width:120px;
-        margin: 0 0.25rem;
-    }
-    .memberBlock > img {
-        width:90px;
-    }
-  }
   

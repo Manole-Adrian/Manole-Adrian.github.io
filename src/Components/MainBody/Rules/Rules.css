@@ -1,12 +1,12 @@
 .rulesSection {
   position:absolute;
   top:-50vh;
-  color:white;
+  color:var(--tertiary-color);
   width:100%;
-  background-color:var(--secondary-color);
+  background-image:url("../../../../public/trianglify-bg.png");
+  background-size:cover;
   height:100vh;
   transition:top .6s ease;
-  transition-delay:.6s;
   z-index:5;
 }
 
@@ -19,16 +19,13 @@
   left:300px;
   top:5rem;
   text-align:right;
-  padding:25px;
-  background-color: var(--primary-color);
-  border-radius:25px;
+  padding:5px;
+  border-bottom-style:solid;
+  border-bottom-width:5px;
+  border-color: var(--secondary-color);
   transition:left .4s ease;
-  transition-delay:.2s;
 }
 
-.titleHiddenRules {
-  left:-100vw;
-}
 
 .rulesTitle > h2 {
   margin:0rem;
@@ -45,10 +42,10 @@
 .rulesText {
   position:absolute;
   left:300px;
-  top:19rem;
+  bottom:3rem;
   font-size:1.75rem;
   width:75%;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   padding:25px;
   border-radius:25px;
 }

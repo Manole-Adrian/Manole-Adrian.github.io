@@ -25,7 +25,7 @@ export default function Game(props) {
                         <AccountCircleIcon className="descriptionImg playersImg" />
                       )}
                       {el.type === "info" && (
-                        <InfoIcon className="descriptionImg infoImg" />
+                        <InfoIcon className="descriptionImg infoGameImg" />
                       )}
                       {el.type === "time" && (
                         <AccessTimeFilledIcon className="descriptionImg timeImg" />
@@ -40,8 +40,8 @@ export default function Game(props) {
               </ul>
             </div>}
             <img
-              className="gameImg"
-              src={`${props.name}.webp`}
+              className={`gameImg ${props.curGame === props.iter ? "gameImgSelected" : ""}`}
+              src={`${props.name}.png`}
               alt={props.name}
             ></img>
           </div>
