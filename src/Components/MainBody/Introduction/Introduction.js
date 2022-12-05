@@ -27,6 +27,7 @@ export default function Introduction(props) {
         In urma competitiei, toata lumea se va putea juca orice la board games & chill
       </div>
       <div className={`infoCountdown ${props.curTab > 0 ? "imgHidden" : ""}`}>
+        <p>Mai este:</p>
         <Countdown date={new Date("2022-12-07T20:00:00")} />
       </div>
       <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScBT18PYYb60uD5ylopUUCqYXiXtPeBHj_HoEc2zuaY2YSOtg/viewform?usp=sf_link" className="applyButton">

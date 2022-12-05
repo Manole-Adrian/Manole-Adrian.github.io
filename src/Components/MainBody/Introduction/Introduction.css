@@ -121,6 +121,12 @@
     z-index:-1;
 }
 
+.infoCountdown >p {
+    font-weight:normal;
+    margin:0;
+    font-size:1.75rem;
+}
+
 @keyframes gameSwing {
     0% {
         transform:rotate(40deg);
