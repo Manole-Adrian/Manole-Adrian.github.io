@@ -84,6 +84,7 @@
 
   .gamesTitle {
     left:20px;
+    top:10px;
     width:fit-content;
     text-align:left;
   }
@@ -94,15 +95,16 @@
 
   .gamesContainer{
       left:0px;
-      top:15rem;
+      top:6rem;
       margin:0 auto;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
       grid-column-gap: 0px;
       grid-row-gap: 0px;
+  }
 
-      
-      
+  .gamesSection {
+    overflow-y:scroll;
   }
 }

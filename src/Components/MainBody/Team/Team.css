@@ -66,6 +66,7 @@
 
     .teamTitle {
         left:20px;
+        top:10px;
     }
 
     .teamTitle >h1 {
@@ -88,9 +89,9 @@
     }
 
     .teamText {
-        left:10px;
+        left:20px;
         width:80vw;
-        top:10rem;
+        top:6rem;;
     
     }
 
@@ -100,7 +101,7 @@
 
     .mobileTeamDispContainer {
         position:absolute;
-        top:20rem;
+        top:15rem;
         width:90vw;
     }
 

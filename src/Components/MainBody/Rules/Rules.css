@@ -60,7 +60,7 @@
 
   .mobileRulesText {
     position: absolute;
-    top: 15rem;
+    top: 6rem;
     width: 75vw;
     background-color: var(--secondary-color);
     padding: 25px;
@@ -72,10 +72,15 @@
 
   .rulesTitle {
     margin:0 auto;
-    left:20px;;
+    left:20px;
+    top:10px !important;
   }
 
   .rulesTitle > h1 {
     font-size:2.5rem;
+  }
+
+  .rulesSection {
+    overflow-y: scroll !important;
   }
 }
