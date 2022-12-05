@@ -61,3 +61,55 @@
     justify-content: center;
     margin-bottom:2rem;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .teamTitle {
+        left:20px;
+    }
+
+    .teamTitle >h1 {
+        font-size:2.5rem;
+    }
+
+    .teamApplyButton {
+        left:10px;
+        bottom:4rem;
+        visibility:hidden;
+    }
+
+    .teamApplyButton::after {
+        content:"Inscrie-te";
+        visibility:visible;
+        display:block;
+        border-style:solid;
+    border-width:3px;
+    border-color:var(--secondary-color);
+    }
+
+    .teamText {
+        left:10px;
+        width:80vw;
+        top:10rem;
+    
+    }
+
+    .teamDispContainer {
+        display:none;
+    }
+
+    .mobileTeamDispContainer {
+        position:absolute;
+        top:20rem;
+        width:90vw;
+    }
+
+    .mobileTeamDisp {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;   
+    }
+    
+  }

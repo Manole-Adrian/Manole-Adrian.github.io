@@ -7,7 +7,7 @@ import Team from './Team/Team'
 
 export default function MainBody(props) {
 
-    
+    console.log(props.curTab)
 
     return <section className='mainBodyContainer'>
         <Introduction curTab={props.curTab} />

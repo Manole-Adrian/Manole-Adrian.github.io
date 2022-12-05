@@ -6,3 +6,9 @@
     height:100vh;
     filter:grayscale(50%) brightness(50%)
 }
+
+@media only screen and (max-width: 600px) {
+    .heroBannerImg {
+        object-fit: cover;
+    }   
+}

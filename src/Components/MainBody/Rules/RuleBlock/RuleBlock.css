@@ -27,7 +27,17 @@
 @media only screen and (max-width: 600px) {
 
     .ruleBlock {
-        padding:10px;
+        height:300px;
+        width:100%;
+    }
+    .ruleContent {
+        font-size:2rem;
+    }
+
+    .ruleBlockImage {
+        width:100%;
+        height:100%;
+        transform:translateY(-50%)
     }
     
   }

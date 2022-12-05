@@ -1,21 +1,21 @@
 import React, { useEffect } from "react";
 import "./Navigation.css";
 
+import Box from '@mui/material/Box';
+import BottomNavigation from '@mui/material/BottomNavigation';
+import BottomNavigationAction from '@mui/material/BottomNavigationAction';
+import InfoIcon from '@mui/icons-material/Info';
+import HomeIcon from '@mui/icons-material/Home';
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
+import GroupsIcon from '@mui/icons-material/Groups';
+
 export default function Navigation(props) {
-  const pos1 = React.useRef();
-  const pos2 = React.useRef();
-  const pos3 = React.useRef();
-  const pos4 = React.useRef();
 
-  const posRefArr = [React.useRef(),React.useRef(),React.useRef(),React.useRef()]
 
-  const [pawnX,setPawnX] = React.useState(0);
   const [curButton, setCurButton] = React.useState(0);
 
   function getPosition() {
-    const x = posRefArr[curButton].current.offsetLeft + (posRefArr[curButton].current.offsetWidth)/2;
-    console.log(curButton)
-    setPawnX(x) 
+    
   }
 
   function changePawnPosition(newPos) {
@@ -30,24 +30,33 @@ export default function Navigation(props) {
     getPosition();
   }, [curButton]);
   
-
   return (
     <nav>
       <div className="navContainer">
-        <a ref={posRefArr[0]} className={`navButton ${curButton === 0 ? 'navSelected' : ''}`} onClick={() => changePawnPosition(0)}>
+        <button className={`navButton ${curButton === 0 ? 'navSelected' : ''}`} onClick={() => changePawnPosition(0)}>
           01
-        </a>
-        <a ref={posRefArr[1]} className={`navButton ${curButton === 1 ? 'navSelected' : ''}`} onClick={() => changePawnPosition(1)}>
+        </button>
+        <button className={`navButton ${curButton === 1 ? 'navSelected' : ''}`} onClick={() => changePawnPosition(1)}>
           02
-        </a>
-        <a ref={posRefArr[2]} className={`navButton ${curButton === 2 ? 'navSelected' : ''}`} onClick={() => changePawnPosition(2)}>
+        </button>
+        <button className={`navButton ${curButton === 2 ? 'navSelected' : ''}`} onClick={() => changePawnPosition(2)}>
           03
-        </a>
-        <a ref={posRefArr[3]} className={`navButton ${curButton === 3 ? 'navSelected' : ''}`} onClick={() => changePawnPosition(3)}>
+        </button>
+        <button className={`navButton ${curButton === 3 ? 'navSelected' : ''}`} onClick={() => changePawnPosition(3)}>
           04
-        </a>
+        </button>
       </div>
-      {/* <img style={{left:pawnX}} src="./pawn.png" className="pawnImg" alt="pawn" ></img> */}
+      <div className="mobileNavContainer">
+
+        <BottomNavigation sx={{bgcolor:"#f1e6d9"}} showLabels value={curButton} onChange={(event,newVal) => {
+          changePawnPosition(newVal);
+        }}>
+          <BottomNavigationAction sx={{color:"#B73C58"}} label="Intro" icon={<HomeIcon/>}></BottomNavigationAction>
+          <BottomNavigationAction sx={{color:"#B73C58"}} label="Info" icon={<InfoIcon/>}></BottomNavigationAction>
+          <BottomNavigationAction sx={{color:"#B73C58"}}label="Jocuri" icon={<SportsEsportsIcon/>}></BottomNavigationAction>
+          <BottomNavigationAction sx={{color:"#B73C58"}} label="Echipa" icon={<GroupsIcon/>}></BottomNavigationAction>
+        </BottomNavigation>
+      </div>
     </nav>
   );
 }

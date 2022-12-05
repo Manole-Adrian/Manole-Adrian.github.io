@@ -59,6 +59,8 @@ nav {
   aspect-ratio: 1;
   font-weight:bold;
   margin-top:2rem;
+  font:"Inter";
+  border-style:none;
 }
 
 .navButton:hover {
@@ -86,8 +88,34 @@ nav {
   }
 }
 
+.mobileNavContainer{
+  display:none;
+}
+
 @media only screen and (max-width: 600px) {
-  nav {
+  .navContainer {
     display:none;
+  }
+  nav {
+    position:initial;
+  left:initial;
+  height:initial;
+  background-color: inherit;
+  border-right-style: initial;
+  border-right-width: initial;
+  border-right-color: inherit;
+  z-index:initial;
+  animation: none;
+  opacity:initial;
+  transition:all .3s ease;
+  }
+  .mobileNavContainer {
+    display:inline-block;
+    z-index:20;
+    color:black;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
   }
 }

@@ -30,7 +30,7 @@ export default function Introduction(props) {
         <Countdown date={new Date("2022-12-07T20:00:00")} />
       </div>
       <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScBT18PYYb60uD5ylopUUCqYXiXtPeBHj_HoEc2zuaY2YSOtg/viewform?usp=sf_link" className="applyButton">
-        Inscrie-te acum <KeyboardDoubleArrowRightIcon className="applyIcon" />
+        Inscrie-te <KeyboardDoubleArrowRightIcon className="applyIcon" />
       </a>
     </section>
   );

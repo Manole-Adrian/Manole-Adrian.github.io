@@ -40,4 +40,14 @@
     font-size:2rem;
 }
 
-  
+@media only screen and (max-width: 600px) {
+    .memberBlock >img {
+        width:90px;
+    }
+    .memberBlock:only-child {
+        position:absolute;
+        left:50%;
+        transform:translateX(-50%) translateY(-50%);
+        top:50%;
+    }
+  }
